@@ -28,10 +28,14 @@ for (const side of [
 }
 
 
-// const moves = ['d4', 'd5', 'e4', 'e5', 'c3', 'f5', 'Bg5', 'Na6', 'Qa4', 'c6', 'Bb5'];
-// const moves = ['g3', 'f6', 'Bh3', 'Nh6', 'Nf3', 'g5', 'Be6', 'Bg7'];
-const moves = ['e3', 'f6', 'Ke2', 'Kf7', 'Kf3', 'Kg6', 'Kg4'];
-// const moves = ['e3', 'd5', 'Qf3', 'a6', 'd4', 'Bf5', 'Qd5',
+// Used for testing, moves can be filled with
+// chess notation moves to create initial conditions
+// for testing.
+let moves = [];
+// moves = ['d4', 'd5', 'e4', 'e5', 'c3', 'f5', 'Bg5', 'Na6', 'Qa4', 'c6', 'Bb5'];
+// moves = ['g3', 'f6', 'Bh3', 'Nh6', 'Nf3', 'g5', 'Be6', 'Bg7'];
+// moves = ['e3', 'f6', 'Ke2', 'Kf7', 'Kf3', 'Kg6', 'Kg4'];
+// moves = ['e3', 'd5', 'Qf3', 'a6', 'd4', 'Bf5', 'Qd5',
 //   'Qd5', 'Bd2', 'Qe4', 'Na3', 'c5', 'Nh3', 'Qh4', 'Rd1', 'Nc6', 'Nf4', 'Nd8', 'g3',
 //   'Bg6'];
 moves.forEach(move => Game.moveByNotation(move));
