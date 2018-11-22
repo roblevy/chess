@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="container">
+      <div id="message-board" class="text-box">
+        &nbsp;
+      </div>
+      <div class="buttons">
+        <div id="hint" class="hint button">Hint</div>
+      </div>
+      <div class="player-indicator player-indicator-white"></div>
+      <div id="column-labels" class="labels">
+        <div class="square">
+          <!-- One empty square at the corner of the board labels -->
+        </div>
+      </div>
+      <div id="board" class="board">
+
+      </div>
+      <div class="player-indicator player-indicator-black hidden"></div>
+      <div>
+        <form id="notation" action="" class="text-box">
+          <input type="text" placeholder="notation e.g. Ne6">
+        </form>
+      </div>
+    </div>
+    <script src="Board.js" charset="utf-8"></script>
+    <script src="Square.js" charset="utf-8"></script>
+    <script src="Piece.js" charset="utf-8"></script>
+    <script src="Game.js" charset="utf-8"></script>
+    <script src="dom.js" charset="utf-8"></script>
+    <script src="app.js" charset="utf-8"></script>
+  </body>
+</html>
