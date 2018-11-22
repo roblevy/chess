@@ -40,7 +40,6 @@ input:focus {
 .text-box {
   margin: 1vh auto;
   font-family: monospace;
-  font-size: 3vh;
   height: 5vh;
   border-radius: 2vh;
   padding-left: 2vh;
@@ -56,8 +55,37 @@ input:focus {
 
 .container {
   height: 95vh;
-  width: 80vh;
   margin: 0 auto;
+}
+
+@media (max-width: 400px) {
+  .container {
+    width: 90vw;
+  }
+  .square {
+    font-size: 8vw;
+    height: 10vw;
+    width: 10vw;
+  }
+  .label {
+    font-size: 6vw;
+  }
+  .text-box,.symbol {
+    font-size: 4vw;
+  }
+}
+
+@media (min-width: 401px) {
+  .container {
+    width: 80vh;
+  }
+  .square {
+    height: 8vh;
+    width: 8vh;
+  }
+  .text-box,.symbol {
+    font-size: 3.5vh;
+  }
 }
 
 .row {
@@ -65,12 +93,16 @@ input:focus {
 }
 
 .square {
-  height: 8vh;
-  width: 8vh;
   display: flex;
   justify-content: center;
   align-items: center;
 }
+
+/* @media (max-width: 768px) {
+  body {
+    background-color: red;
+  }
+} */
 
 .black {
   background-color: #7f5d44;
@@ -123,5 +155,4 @@ input:focus {
 .symbol {
   color: gray;
   padding: 2vh;
-  font-size: 3.5vh;
 }
